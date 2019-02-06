@@ -1,0 +1,34 @@
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+    opacity: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    &.hide {
+        @include easeOut();
+    }
+    #overlay-container {
+        position: fixed;top: 25%;
+        left: 40%;
+        margin-top: -50px;
+        margin-left: -100px;
+        #img-container {
+            position: relative;
+        }
+    }
+
+
+}
+#fence {
+    position: absolute;
+}
+#enter-btn {
+    position: absolute; 
+    padding-left: 40px;
+}
