@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './Overlay.scss'
 import fence from '../../img/fence.jpg'
 import enter from '../../img/enter.gif'
@@ -23,7 +23,7 @@ class Overlay extends Component {
                 <div id="overlay-container">
                     <div id="img-container">
                         <img id="fence" src={fence} alt={"Fence"}/>
-                        <img id="enter-btn" src={enter} alt={"Enter"} onClick= {this.hideOverlay.bind(this)} />
+                        <NavLink to="/about"><img id="enter-btn" src={enter} alt={"Enter"} onClick= {this.hideOverlay.bind(this)} /></NavLink>
                     </div>
                 </div>
             </div>

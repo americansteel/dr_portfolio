@@ -1,5 +1,5 @@
 @mixin easeOut {
-    transition: all 0.5s ease-out;
+    transition: all .5s ease-out;
     opacity: 0;
 }
 
@@ -12,6 +12,7 @@
     background-color: white;
     &.hide {
         @include easeOut();
+        z-index: -1000;
     }
     #overlay-container {
         position: fixed;top: 25%;

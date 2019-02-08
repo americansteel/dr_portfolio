@@ -1,0 +1,23 @@
+.nav {
+    grid-area: header;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "left middle right"   
+}
+.name {
+    grid-area: left;
+}
+.links {
+    grid-area: right;
+}
+ul {
+    list-style-type: none;
+    li {
+        float: left;
+        padding: 20px;
+    }
+}
+.name {
+
+}
