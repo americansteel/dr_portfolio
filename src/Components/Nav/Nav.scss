@@ -1,21 +1,42 @@
+@import '../../cfg/cfg.scss';
 .nav {
     grid-area: header;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "left middle right"   
+    grid-template-areas: "left middle right";
+    @media screen and (max-width: $lrg-breakpoint) {
+        grid-template-columns: 1fr 0.5fr 1fr;
+    }
+    @media screen and (max-width: $med-breakpoint) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "left right"
+    }
+    @media screen and (max-width: $sml-breakpoint) {
+        grid-template-columns: 1fr;
+        grid-template-areas: "main";
+    }
 }
 .name {
-    grid-area: left;
+    grid-area: "left";
+    @media screen and (max-width: 480px) { 
+        grid-area: "main"
+    }
 }
 .links {
     grid-area: right;
+    @media screen and (max-width: 480px) { 
+        display: none;
+    }
 }
 ul {
     list-style-type: none;
     li {
         float: left;
         padding: 20px;
+        @media screen and (max-width: 720px) {
+            padding: 10px;
+        }
     }
 }
 .name {

@@ -1,0 +1,43 @@
+@import '../../cfg/cfg.scss';
+
+.work {
+    a {
+        display: block;
+    }
+    .work-example {
+        width: 65vw;
+        margin: 0 auto;
+        padding: 30px;
+        @media screen and (max-width: $lrg-breakpoint) {
+            width: 85vw;       
+        }
+        @media screen and (max-width: $sml-breakpoint) {
+            width: 80vw;       
+        }
+        img {
+            width: 100%;
+            height: 60vh;
+            object-fit: scale-down;
+            @media screen and (max-width: $lrg-breakpoint) {
+                height: 45vh;
+            }
+            @media screen and (max-width: $sml-breakpoint) {
+                height: 15vh;
+            }
+        }
+        .slick-dots {
+            text-align: center;
+            margin: 0 auto;
+        }
+        .slick-prev {
+         &::before {
+             color: black;
+         }
+        }
+        .slick-next {
+            &::before {
+                color: black;
+            }      
+         }  
+    }
+}

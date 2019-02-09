@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.scss';
-import { Route, NavLink, HashRouter } from 'react-router-dom'
+import { Route, HashRouter } from 'react-router-dom'
 import Overlay from './Components/Overlay/Overlay'
 import About from './Components/About/About'
 import Nav from './Components/Nav/Nav'

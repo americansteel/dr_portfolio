@@ -1,5 +1,17 @@
-.about {
+@import '../../cfg/cfg.scss';
+
+.about {    
+    margin: 0 auto;
+    @media screen and (max-width: $med-breakpoint) {
+        img {
+        max-height: 75vh;
+        max-height: 75vw;
+        }
+    }
     a {
         padding: 10px;
+    }
+    img {
+        border-radius: 50%
     }
 }
