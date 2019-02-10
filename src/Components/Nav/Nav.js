@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Nav.scss'
+import NavMobile from './NavMobile'
 import { NavLink} from 'react-router-dom'
 
 class Nav extends Component {
@@ -12,6 +13,7 @@ class Nav extends Component {
                 <li><NavLink to="/work">work</NavLink></li>
                 <li><NavLink to="/resume">resume</NavLink></li>
             </ul>
+            <NavMobile></NavMobile>
             </div>
         )
     }

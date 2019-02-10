@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './About.scss'
-import dylan from '../../img/dr4.jpg'
+import dylan from '../../img/dr2.jpg'
 
 class About extends Component {
     render() {
@@ -10,9 +10,9 @@ class About extends Component {
                 <h1>dylan roberts</h1>
                 <h2>full stack developer</h2>
                 <div>
-                    <a href="mailto:dylanllewelynroberts@gmail.com" target="_blank">e-mail</a>
-                    <a href="https://github.com/americansteel"  target="_blank">github</a>
-                    <a href="https://linkedin.com/in/dylan-roberts-dev"  target="_blank">linkedin</a>
+                    <a href="mailto:dylanllewelynroberts@gmail.com" target="_blank" rel="noopener noreferrer">e-mail</a>
+                    <a href="https://github.com/americansteel"  target="_blank" rel="noopener noreferrer">github</a>
+                    <a href="https://linkedin.com/in/dylan-roberts-dev"  target="_blank" rel="noopener noreferrer">linkedin</a>
                 </div>
             </div>
         )

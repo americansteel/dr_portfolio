@@ -1,5 +1,8 @@
 @import '../../cfg/cfg.scss';
 .nav {
+    z-index: 1000;
+    position: fixed;
+    background: white;
     grid-area: header;
     width: 100%;
     display: grid;
@@ -37,8 +40,49 @@ ul {
         @media screen and (max-width: 720px) {
             padding: 10px;
         }
+        @media screen and (max-width: $sml-breakpoint) {
+            float: none;
+            margin: 0 auto;
+        }
     }
 }
-.name {
 
+
+.burger-menu {
+    a {
+        font-size: 32px;
+    }
+    @media screen and (min-width: 481px) {
+        display: none;
+    }
+    @media screen and (max-width: $sml-breakpoint) {
+        display: block;
+    }
+    .bm-overlay {
+        background: white !important;
+        height: 200px !important;
+    }
+    .bm-menu {
+        height: 200px !important;
+        overflow: hidden !important;
+    }
+    .bm-menu-wrap {
+        width: 100% !important ;
+    }
+    .bm-item {
+        margin: 0;
+        padding-left: 0;
+    }
+    .bm-burger-button {
+        z-index: 10001 !important;
+        position: absolute;
+        width: 26px !important;
+        height: 20px !important;
+        left: 36px !important;
+        top: 31px !important;
+    }
+    .bm-burger-bars {
+        background: black;
+       
+    }
 }
