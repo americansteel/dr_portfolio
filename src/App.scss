@@ -6,7 +6,7 @@ $font:  'Karla', sans-serif;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 90px 1fr;
   grid-template-areas: "header header header" "content content content" "footer footer footer";
   font-family: $font;
   a {
@@ -22,5 +22,6 @@ $font:  'Karla', sans-serif;
 }
 .content {
   grid-area: content;
+  padding-top: 10px;
 }
 

@@ -1,7 +1,13 @@
+@import '../../cfg/cfg.scss';
+
 .resume {
     img {
         height: auto;
         width: auto;
         max-width: 50vw;
+
+        @media screen and (max-width: $sml-breakpoint) { 
+            max-width: 80vw;
+        }
     }
 }

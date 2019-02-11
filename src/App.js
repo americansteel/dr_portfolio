@@ -6,6 +6,7 @@ import About from './Components/About/About'
 import Nav from './Components/Nav/Nav'
 import Work from './Components/Work/Work'
 import Resume from './Components/Resume/Resume'
+import Footer from './Components/Footer/Footer'
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
             <Route path='/work' component={Work}/>
             <Route path='/resume' component={Resume}/>
           </div>
+          <Footer></Footer>
         </div>
       </HashRouter>
     );
