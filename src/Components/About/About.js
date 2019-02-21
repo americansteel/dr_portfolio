@@ -10,7 +10,7 @@ class About extends Component {
                 <h1>dylan roberts</h1>
                 <p>Toronto based web developer specializing in full stack Javascript. Currently looking to join a team to
                     develop effective and well designed web applications.   </p>
-                <div>
+                <div className="about-links">
                     <a href="mailto:dylanllewelynroberts@gmail.com" target="_blank" rel="noopener noreferrer">e-mail</a>
                     <a href="https://github.com/americansteel"  target="_blank" rel="noopener noreferrer">github</a>
                     <a href="https://linkedin.com/in/dylan-roberts-dev"  target="_blank" rel="noopener noreferrer">linkedin</a>
